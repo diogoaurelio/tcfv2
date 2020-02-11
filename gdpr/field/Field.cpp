@@ -1,7 +1,6 @@
 //
-// Created by diogo on 06.02.20.
+// Created by diogo on 10.02.20.
 //
-
 #include "Field.h"
 
 std::string Field::getName() {
@@ -10,4 +9,9 @@ std::string Field::getName() {
 
 int Field::getPos() {
     return pos;
+}
+
+Field::Field() {
+    name = "field";
+    pos = 0;
 }

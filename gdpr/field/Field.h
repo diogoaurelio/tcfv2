@@ -5,16 +5,16 @@
 #ifndef TCF_FIELD_H
 #define TCF_FIELD_H
 
+#include <string>
 
 class Field {
-
-private:
-    const int pos;
-    const std::string name;
-
+protected:
+    int pos;
+    std::string name;
 public:
     int getPos();
     std::string getName();
+    Field();
 };
 
 

@@ -7,10 +7,7 @@
 
 #include "../Field.h"
 
-class Vendor : public Field  {
-private:
-    const int pos = 6;
-    const std::string name = "vendor";
+class Vendor : public Field {
 public:
     Vendor();
 };
