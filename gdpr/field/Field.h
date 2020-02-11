@@ -6,15 +6,24 @@
 #define TCF_FIELD_H
 
 #include <string>
+#include <variant>
+
 
 class Field {
 protected:
     int pos;
     std::string name;
 public:
-    int getPos();
-    std::string getName();
-    Field();
+    int getPos(){
+        return pos;
+    }
+
+    std::string getName() {
+        return name;
+    }
+
+    // todo: make this virtual
+    std::variant<std::string, int> decode();
 };
 
 

@@ -5,7 +5,7 @@
 #ifndef TCF_PURPOSEONETREATMENT_H
 #define TCF_PURPOSEONETREATMENT_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class PurposeOneTreatment : public Field {
 public:

@@ -5,8 +5,9 @@
 #ifndef TCF_SPECIALFEATUREOPTINS_H
 #define TCF_SPECIALFEATUREOPTINS_H
 
-#include "../Field.h"
+#include "Field.h"
 
+//todo: str -> map
 class SpecialFeatureOptIns : public Field {
 public:
     SpecialFeatureOptIns();

@@ -5,7 +5,7 @@
 #ifndef TCF_VENDORLISTVERSION_H
 #define TCF_VENDORLISTVERSION_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class VendorListVersion : public Field {
 public:

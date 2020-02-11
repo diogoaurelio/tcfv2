@@ -5,7 +5,7 @@
 #ifndef TCF_PURPOSESCONSENT_H
 #define TCF_PURPOSESCONSENT_H
 
-#include "../Field.h"
+#include "Field.h"
 
 // Note: renamed from PurposesAllowed
 class PurposesConsent : public Field {
