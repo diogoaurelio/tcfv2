@@ -5,7 +5,7 @@
 #ifndef TCF_CONSENTLANGUAGE_H
 #define TCF_CONSENTLANGUAGE_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class ConsentLanguage : public Field {
 public:

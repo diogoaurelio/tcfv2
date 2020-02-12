@@ -5,7 +5,7 @@
 #ifndef TCF_CMPVERSION_H
 #define TCF_CMPVERSION_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class CmpVersion: public Field {
 public:

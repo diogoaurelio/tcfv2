@@ -5,7 +5,7 @@
 #ifndef TCF_TCFPOLICYVERSION_H
 #define TCF_TCFPOLICYVERSION_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class TcfPolicyVersion : public Field {
 public:

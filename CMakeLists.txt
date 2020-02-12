@@ -3,23 +3,33 @@ project(tcf)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(tcf main.cpp ${PROJECT_SOURCE_DIR}/gdpr/segment/Core.cpp ${PROJECT_SOURCE_DIR}/gdpr/segment/Core.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/Field.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/Field.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/Vendor.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/Vendor.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/Created.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/Created.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/LastUpdated.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/LastUpdated.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/CmpId.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/CmpId.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/CmpVersion.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/CmpVersion.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/ConsentScreen.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/ConsentScreen.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/ConsentLanguage.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/ConsentLanguage.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/VendorListVersion.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/VendorListVersion.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/TcfPolicyVersion.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/TcfPolicyVersion.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/IsServiceSpecific.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/IsServiceSpecific.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/UseNonStandardStacks.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/UseNonStandardStacks.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/SpecialFeatureOptIns.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/SpecialFeatureOptIns.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposesConsent.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposesConsent.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposesLITransparency.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposesLITransparency.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposeOneTreatment.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PurposeOneTreatment.h
-        ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PublisherCC.cpp ${PROJECT_SOURCE_DIR}/gdpr/field/v2/PublisherCC.h
+add_executable(tcf main.cpp
+        gdpr/TCString.cpp
+        gdpr/StringUtils.h gdpr/StringUtils.cpp
+        gdpr/TCModel.h gdpr/TCModel.cpp
+
+        gdpr/segment/Core.cpp gdpr/segment/Core.h
+        gdpr/segment/Segment.h
+
+        gdpr/field/Field.h
+        gdpr/field/Version.cpp gdpr/field/Version.h
+        gdpr/field/Created.cpp gdpr/field/Created.h
+        gdpr/field/LastUpdated.cpp gdpr/field/LastUpdated.h
+        gdpr/field/CmpId.cpp gdpr/field/CmpId.h
+        gdpr/field/CmpVersion.cpp gdpr/field/CmpVersion.h
+        gdpr/field/ConsentScreen.cpp gdpr/field/ConsentScreen.h
+        gdpr/field/ConsentLanguage.cpp gdpr/field/ConsentLanguage.h
+        gdpr/field/VendorListVersion.cpp gdpr/field/VendorListVersion.h
+        gdpr/field/TcfPolicyVersion.cpp gdpr/field/TcfPolicyVersion.h
+        gdpr/field/IsServiceSpecific.cpp gdpr/field/IsServiceSpecific.h
+        gdpr/field/UseNonStandardStacks.cpp gdpr/field/UseNonStandardStacks.h
+        gdpr/field/SpecialFeatureOptIns.cpp gdpr/field/SpecialFeatureOptIns.h
+        gdpr/field/PurposesConsent.cpp gdpr/field/PurposesConsent.h
+        gdpr/field/PurposesLITransparency.cpp gdpr/field/PurposesLITransparency.h
+        gdpr/field/PurposeOneTreatment.cpp gdpr/field/PurposeOneTreatment.h
+        gdpr/field/PublisherCC.cpp gdpr/field/PublisherCC.h
+
+        gdpr/encoder/FieldEncoder.h
+        gdpr/encoder/IntegerEncoder.cpp gdpr/encoder/IntegerEncoder.cpp
 
         )

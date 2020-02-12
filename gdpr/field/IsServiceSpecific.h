@@ -5,7 +5,7 @@
 #ifndef TCF_ISSERVICESPECIFIC_H
 #define TCF_ISSERVICESPECIFIC_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class IsServiceSpecific : public Field {
 public:

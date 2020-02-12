@@ -5,8 +5,7 @@
 #ifndef TCF_LASTUPDATED_H
 #define TCF_LASTUPDATED_H
 
-#include "../Field.h"
-
+#include "Field.h"
 class LastUpdated : public Field {
 public:
     LastUpdated();

@@ -5,7 +5,7 @@
 #ifndef TCF_CONSENTSCREEN_H
 #define TCF_CONSENTSCREEN_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class ConsentScreen : public Field {
 public:

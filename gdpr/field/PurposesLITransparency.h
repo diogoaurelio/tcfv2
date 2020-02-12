@@ -5,7 +5,7 @@
 #ifndef TCF_PURPOSESLITRANSPARENCY_H
 #define TCF_PURPOSESLITRANSPARENCY_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class PurposesLITransparency : public Field {
 public:

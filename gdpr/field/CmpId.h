@@ -5,7 +5,7 @@
 #ifndef TCF_CMPID_H
 #define TCF_CMPID_H
 
-#include "../Field.h"
+#include "Field.h"
 
 class CmpId : public Field {
 public:
