@@ -12,9 +12,9 @@ const std::vector<std::shared_ptr<Field>> Core::two = boost::assign::list_of<std
 
 std::optional<std::vector<std::shared_ptr<Field>>> Core::getSequence(int tcfVersion) {
     if (tcfVersion == 1) {
-        return one;
+        return std::make_optional(one);
     } else if (tcfVersion == 2) {
-        return two;
+        return std::make_optional(two);
     } else {
         return std::nullopt;
     }

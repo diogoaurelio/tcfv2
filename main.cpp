@@ -7,7 +7,6 @@
 #include "gdpr/StringUtils.h"
 
 
-
 int main() {
     // merdas aleatorias para testes mui rapidos ;)
     std::string myInt = "int";
@@ -32,6 +31,9 @@ int main() {
     }
 
     const auto model = TCString::decode(someVal);
+
+    std::vector<uint8_t> bytes;
+    bytes.data();
 
     return 0;
 }

@@ -26,6 +26,5 @@ std::optional<TCModel*> TCString::decode(const std::string& someVal) {
         std::cout << "i is: " << i << " and segment is " << segments[i] << std::endl;
     }
 
-
-    return &model;
+    return std::make_optional(&model);
 }
