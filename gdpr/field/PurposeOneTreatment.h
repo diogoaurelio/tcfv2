@@ -9,7 +9,7 @@
 
 class PurposeOneTreatment : public Field {
 public:
-    PurposeOneTreatment();
+    explicit PurposeOneTreatment();
 };
 
 

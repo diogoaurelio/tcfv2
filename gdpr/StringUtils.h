@@ -12,7 +12,7 @@
 class StringUtils {
 private:
     // disallow class instantiation
-    StringUtils(){}
+    explicit StringUtils(){}
 public:
     static std::vector<std::string> split(const std::string& someVal);
 };

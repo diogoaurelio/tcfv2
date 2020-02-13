@@ -10,7 +10,7 @@
 // Note: renamed from PurposesAllowed
 class PurposesConsent : public Field {
 public:
-    PurposesConsent();
+    explicit PurposesConsent();
 };
 
 

@@ -9,7 +9,7 @@
 
 class VendorListVersion : public Field {
 public:
-    VendorListVersion();
+    explicit VendorListVersion();
 };
 
 

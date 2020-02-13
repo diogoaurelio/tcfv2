@@ -9,7 +9,7 @@
 
 class CmpId : public Field {
 public:
-    CmpId();
+    explicit CmpId();
 };
 
 

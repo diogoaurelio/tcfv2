@@ -9,7 +9,7 @@
 
 class ConsentLanguage : public Field {
 public:
-    ConsentLanguage();
+    explicit ConsentLanguage();
 };
 
 

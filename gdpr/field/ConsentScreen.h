@@ -9,7 +9,7 @@
 
 class ConsentScreen : public Field {
 public:
-    ConsentScreen();
+    explicit ConsentScreen();
 };
 
 

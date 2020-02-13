@@ -9,7 +9,7 @@
 
 class PurposesLITransparency : public Field {
 public:
-    PurposesLITransparency();
+    explicit PurposesLITransparency();
 };
 
 

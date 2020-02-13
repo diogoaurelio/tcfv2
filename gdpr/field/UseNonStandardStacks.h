@@ -9,7 +9,7 @@
 
 class UseNonStandardStacks : public Field {
 public:
-    UseNonStandardStacks();
+    explicit UseNonStandardStacks();
 };
 
 

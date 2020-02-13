@@ -10,7 +10,7 @@
 //todo: str -> map
 class SpecialFeatureOptIns : public Field {
 public:
-    SpecialFeatureOptIns();
+    explicit SpecialFeatureOptIns();
 };
 
 

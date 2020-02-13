@@ -9,7 +9,7 @@
 
 class IsServiceSpecific : public Field {
 public:
-    IsServiceSpecific();
+    explicit IsServiceSpecific();
 };
 
 

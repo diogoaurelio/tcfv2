@@ -9,7 +9,7 @@
 
 class TcfPolicyVersion : public Field {
 public:
-    TcfPolicyVersion();
+    explicit TcfPolicyVersion();
 };
 
 

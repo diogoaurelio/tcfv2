@@ -10,7 +10,7 @@
 // Publisher Country Code
 class PublisherCC : public Field {
 public:
-    PublisherCC();
+    explicit PublisherCC();
 };
 
 

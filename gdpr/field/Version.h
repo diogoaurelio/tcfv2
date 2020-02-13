@@ -9,7 +9,7 @@
 
 class Version : public Field {
 public:
-    Version();
+    explicit Version();
 };
 
 

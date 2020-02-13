@@ -9,7 +9,7 @@
 
 class CmpVersion: public Field {
 public:
-    CmpVersion();
+    explicit CmpVersion();
 };
 
 

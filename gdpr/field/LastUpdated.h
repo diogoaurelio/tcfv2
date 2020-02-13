@@ -8,7 +8,7 @@
 #include "Field.h"
 class LastUpdated : public Field {
 public:
-    LastUpdated();
+    explicit LastUpdated();
 };
 
 

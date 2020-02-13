@@ -14,7 +14,7 @@
 class TCString {
 private:
     // prevent instantiation
-    TCString() {}
+    explicit TCString() {}
     Core static coreSegment;
 public:
     static std::optional<TCModel*> decode(const std::string& someVal);

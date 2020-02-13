@@ -9,7 +9,7 @@
 
 class Created : public Field {
 public:
-    Created();
+    explicit Created();
 
 };
 
