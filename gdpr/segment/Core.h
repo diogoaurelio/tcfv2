@@ -6,12 +6,12 @@
 #define TCF_CORE_H
 
 #include <vector>
-#include "optional"
 #include <memory>
 #include "Segment.h"
 #include "../field/Field.h"
 #include "../field/Version.h"
 #include "../field/Created.h"
+#include <boost/optional.hpp>
 
 class Core : public Segment {
 
@@ -20,7 +20,7 @@ private:
     static const std::vector<std::shared_ptr<Field>> two;
     static const Core coreSegment;
 public:
-    std::optional<std::vector<std::shared_ptr<Field>>> getSequence(int tcfVersion);
+    boost::optional<std::vector<std::shared_ptr<Field>>> getSequence(int tcfVersion);
     // override
     void decode(const std::string& someVal, TCModel& model);
     Core();

@@ -7,13 +7,13 @@
 
 Core TCString::coreSegment = Core();
 
-std::optional<TCModel*> TCString::decode(const std::string& someVal) {
+boost::optional<TCModel*> TCString::decode(const std::string& someVal) {
     if (someVal.empty()) {
-        return std::nullopt;
+        return boost::none;
     }
     const auto segments = StringUtils::split(someVal);
     if (segments.empty()) {
-        return std::nullopt;
+        return boost::none;
     }
 
     TCModel model = TCModel();
@@ -26,5 +26,5 @@ std::optional<TCModel*> TCString::decode(const std::string& someVal) {
         std::cout << "i is: " << i << " and segment is " << segments[i] << std::endl;
     }
 
-    return std::make_optional(&model);
+    return boost::make_optional(&model);
 }

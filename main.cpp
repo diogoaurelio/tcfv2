@@ -18,8 +18,8 @@ int main() {
     std::cout << "Version pos is " << version.getPos() << std::endl;
     Core core = Core();
     const auto sequence = core.getSequence(2);
-    if (sequence.has_value()) {
-        std::cout << "Core is " << sequence.has_value() << std::endl;
+    if (sequence) {
+        std::cout << "Core is " << sequence.value().at(0) << std::endl;
         Field* f = sequence.value().at(0).get();
         std::cout << "Core sequence value is " << (*f).getName() << std::endl;
     }

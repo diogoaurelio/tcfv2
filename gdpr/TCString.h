@@ -17,7 +17,7 @@ private:
     explicit TCString() {}
     Core static coreSegment;
 public:
-    static std::optional<TCModel*> decode(const std::string& someVal);
+    static boost::optional<TCModel*> decode(const std::string& someVal);
 };
 
 
