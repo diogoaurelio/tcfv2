@@ -6,6 +6,9 @@
 #include "gdpr/TCString.h"
 #include "gdpr/StringUtils.h"
 
+#include <bitset>
+
+#include <cryptopp/base64.h>
 
 int main() {
     // merdas aleatorias para testes mui rapidos ;)
@@ -29,6 +32,9 @@ int main() {
     for(auto const& value: result) {
         std::cout << "Value is " << value << std::endl;
     }
+
+    //std::cout << "Bitparser version " << bitParser(6) << std::endl;
+    BitParser read(someVal);
 
     const auto model = TCString::decode(someVal);
 

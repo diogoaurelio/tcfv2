@@ -7,18 +7,19 @@
 
 #include <vector>
 #include <memory>
+#include <boost/optional.hpp>
+
 #include "Segment.h"
 #include "../field/Field.h"
 #include "../field/Version.h"
 #include "../field/Created.h"
-#include <boost/optional.hpp>
+#include "../encoder/BitParser.cpp"
 
 class Core : public Segment {
 
 private:
     static const std::vector<std::shared_ptr<Field>> one;
     static const std::vector<std::shared_ptr<Field>> two;
-    static const Core coreSegment;
 public:
     boost::optional<std::vector<std::shared_ptr<Field>>> getSequence(int tcfVersion);
     // override

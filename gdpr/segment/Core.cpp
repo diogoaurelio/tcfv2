@@ -21,8 +21,10 @@ boost::optional<std::vector<std::shared_ptr<Field>>> Core::getSequence(int tcfVe
 }
 
 void Core::decode(const std::string& someVal, TCModel& model) {
-    std::cout << "Decoding Core String segment now" << std::endl;
+    std::cout << "Decoding Core String segment now " << someVal << std::endl;
+    //const BitParser bitParser = BitParser(someVal);
 
 }
 
-Core::Core() = default;
+Core::Core() {
+};

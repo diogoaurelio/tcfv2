@@ -31,5 +31,6 @@ add_executable(tcf main.cpp
 
         gdpr/encoder/FieldEncoder.h
         gdpr/encoder/IntegerEncoder.cpp gdpr/encoder/IntegerEncoder.cpp
+        gdpr/encoder/BitParser.cpp gdpr/encoder/BitParser.h
 
         )
