@@ -141,4 +141,4 @@ $RECYCLE.BIN/
 *.out
 *.app
 
-cmake-build-debug
+cmake-build-*

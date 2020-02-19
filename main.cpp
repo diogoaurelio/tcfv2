@@ -34,7 +34,7 @@ int main() {
     }
 
     //std::cout << "Bitparser version " << bitParser(6) << std::endl;
-    BitParser read(someVal);
+    //BitParser read(someVal);
 
     const auto model = TCString::decode(someVal);
 
